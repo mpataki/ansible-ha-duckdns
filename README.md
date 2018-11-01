@@ -22,7 +22,7 @@ You first need to sign up for DuckDNS and obtain a token.
 ## Example Playbook
 
 ```yml
-    - hosts: servers
+    - hosts: pi
       vars:
         duck_subdomain: <your-domain>
         duck_token: <your-token>
@@ -33,4 +33,3 @@ You first need to sign up for DuckDNS and obtain a token.
 ## License
 
 MIT
-

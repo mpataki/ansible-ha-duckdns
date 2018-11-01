@@ -10,7 +10,7 @@ galaxy_info:
       versions:
         - stretch
 
-  galaxy_tags: []
+  galaxy_tags:
     - homeassistant
 
-dependencies: []
+  dependencies: []

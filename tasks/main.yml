@@ -1,0 +1,17 @@
+---
+
+- name: working directory
+  file:
+    state: directory
+    path: /home/pi/duckdns
+
+- name: duck update script
+  copy:
+    dest: /home/pi/duckdns/duck.sh
+    content: 'echo url="https://www.duckdns.org/update?domains={{ duck_subdomain }}&token={{ duck_token }}&ip=" | curl -k -o ~/duckdns/duck.log -K -'
+
+- name: cron job to update the dynamic ip
+  cron:
+    name: duckdns update
+    minute: '*/5'
+    job: '~/duckdns/duck.sh >/dev/null 2>&1'

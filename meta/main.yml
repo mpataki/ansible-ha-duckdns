@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: ha-duckdns
+  role_name: ha_duckdns
   author: Mat Pataki
   description: 'duckdns setup for home assistant'
   company: 'n/a'

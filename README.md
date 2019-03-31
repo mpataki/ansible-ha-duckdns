@@ -1,5 +1,7 @@
 # ansible-ha-duckdns
 
+[![Build Status](https://travis-ci.org/mpataki/ansible-ha-duckdns.svg?branch=master)](https://travis-ci.org/mpataki/ansible-ha-duckdns)
+
 [DuckDNS](https://www.duckdns.org/) is a service that grants users a subdomain of duckdns.org as well as an API that can be used to update the public IP address that the subdomain points to. This effectively allows common home dynamic IPs to be pointed to by the subdomain, even if they change.
 
 This ansible role consumes the subdomain and auth token as variables and uses them to create a cron job which will keep the DuckDNS up to date with your pi's IP address.
